@@ -7,10 +7,12 @@ import Desc from './Desc'
 
 class Thumbnail extends Component {
     render() {
+        
         return (
             <div className="Thumbnail">
+            <h1></h1>
                 <ImgSrc></ImgSrc>
-                <Desc></Desc>
+                <Desc title={this.props.title}></Desc>
             </div>
 
         );

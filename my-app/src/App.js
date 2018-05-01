@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
-import Header from './Header';
 import Thumbnail from './Thumbnail';
+import Header from './Header';
 
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      welcomenote: 'React'
+    }
+  }
   render() {
+
+    const title = "Video Description";
+
     return (
+
       <div className="App">
-        <Header></Header>
-        <Thumbnail></Thumbnail>
+
+        <Header welcome={this.state.welcomenote}></Header>
+        <Thumbnail title={title}></Thumbnail>
+        <Thumbnail title={title}></Thumbnail>
+        <Thumbnail title={title}></Thumbnail>
+
+
       </div>
     );
   }

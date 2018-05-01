@@ -4,10 +4,11 @@ import './App.css';
 
 class Desc extends Component {
     render() {
+        var a = this.props.title
         return (
-            <span>Description of the video</span>
+            <span>{this.props.title}</span>
         )
     }
 } 
 
-export default Desc
+export default Desc 
