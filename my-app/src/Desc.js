@@ -4,9 +4,10 @@ import './App.css';
 
 class Desc extends Component {
     render() {
-        var a = this.props.title
+        const title = "Title"
+        console.log(this.props)
         return (
-            <span>{this.props.title}</span>
+            <span>{title}</span>
         )
     }
 } 
