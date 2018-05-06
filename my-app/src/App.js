@@ -14,6 +14,7 @@ class App extends Component {
 
     const title = "Video Description";
     const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    const anything = [1,2]
     const listItems = numbers.map((number) =>
       <li>{number}</li>
     );
@@ -24,9 +25,8 @@ class App extends Component {
 
       <div className="App">
         <button onClick={activateLasers}>Click To Add</button>
-        {listItems}
         <Header welcome={this.state.welcomenote}></Header>
-        <Thumbnail number={numbers} ></Thumbnail>
+        <Thumbnail number={anything} ></Thumbnail>
 
 
       </div>
